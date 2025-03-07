@@ -1,8 +1,12 @@
-export HOMEBREW_NO_ANALYTICS=1
-export PATH=$(brew --prefix python)/libexec/bin:$HOME/.local/bin:$PATH
+OS=`uname`
+if [[ $OS == 'Darwin' ]]; then
+  export HOMEBREW_NO_ANALYTICS=1
+  export PATH=$(brew --prefix python)/libexec/bin:$HOME/.local/bin:$PATH
+fi
+
 export ZSH="$HOME/.oh-my-zsh"
 export LANG=en_US.UTF-8
-export EDITOR=n
+export EDITOR=nvim
 
 ZSH_THEME="robbyrussell"
 plugins=(git zsh-autosuggestions fzf docker ssh)
