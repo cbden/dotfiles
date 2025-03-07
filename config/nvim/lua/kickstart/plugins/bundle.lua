@@ -24,7 +24,6 @@ return {
       hooks.register(hooks.type.WHITESPACE, hooks.builtin.hide_first_tab_indent_level)
     end,
   },
-  { 'lewis6991/gitsigns.nvim' },
   { 'windwp/nvim-autopairs', event = 'InsertEnter', config = true, opts = {} },
   {
     'nvim-lualine/lualine.nvim',

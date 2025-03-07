@@ -1,5 +1,5 @@
 font-family = "IosevkaTerm Nerd Font Mono"
-font-size = 22
+font-size = 24
 theme = tokyonight
 window-colorspace = "display-p3"
 macos-titlebar-style = hidden
